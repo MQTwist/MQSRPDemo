@@ -14,6 +14,10 @@
 		484BFF47255B7B53003E92B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484BFF46255B7B53003E92B9 /* Assets.xcassets */; };
 		484BFF4A255B7B53003E92B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484BFF48255B7B53003E92B9 /* LaunchScreen.storyboard */; };
 		484BFF4D255B7B53003E92B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 484BFF4C255B7B53003E92B9 /* main.m */; };
+		484BFF58255B8773003E92B9 /* WageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 484BFF57255B8773003E92B9 /* WageManager.m */; };
+		484BFF5D255B8C1A003E92B9 /* SRPWageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 484BFF5C255B8C1A003E92B9 /* SRPWageManager.m */; };
+		484BFF61255B8C30003E92B9 /* SRPWageLevelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 484BFF60255B8C30003E92B9 /* SRPWageLevelManager.m */; };
+		484BFF65255B8C71003E92B9 /* SRPWageFormulaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 484BFF64255B8C71003E92B9 /* SRPWageFormulaManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,14 @@
 		484BFF49255B7B53003E92B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		484BFF4B255B7B53003E92B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		484BFF4C255B7B53003E92B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		484BFF56255B8773003E92B9 /* WageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WageManager.h; sourceTree = "<group>"; };
+		484BFF57255B8773003E92B9 /* WageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WageManager.m; sourceTree = "<group>"; };
+		484BFF5B255B8C1A003E92B9 /* SRPWageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRPWageManager.h; sourceTree = "<group>"; };
+		484BFF5C255B8C1A003E92B9 /* SRPWageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRPWageManager.m; sourceTree = "<group>"; };
+		484BFF5F255B8C30003E92B9 /* SRPWageLevelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRPWageLevelManager.h; sourceTree = "<group>"; };
+		484BFF60255B8C30003E92B9 /* SRPWageLevelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRPWageLevelManager.m; sourceTree = "<group>"; };
+		484BFF63255B8C71003E92B9 /* SRPWageFormulaManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRPWageFormulaManager.h; sourceTree = "<group>"; };
+		484BFF64255B8C71003E92B9 /* SRPWageFormulaManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRPWageFormulaManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,9 @@
 				484BFF3B255B7B52003E92B9 /* AppDelegate.m */,
 				484BFF3D255B7B52003E92B9 /* SceneDelegate.h */,
 				484BFF3E255B7B52003E92B9 /* SceneDelegate.m */,
+				484BFF56255B8773003E92B9 /* WageManager.h */,
+				484BFF57255B8773003E92B9 /* WageManager.m */,
+				484BFF5A255B8C08003E92B9 /* SRP */,
 				484BFF40255B7B52003E92B9 /* ViewController.h */,
 				484BFF41255B7B52003E92B9 /* ViewController.m */,
 				484BFF43255B7B52003E92B9 /* Main.storyboard */,
@@ -74,6 +89,19 @@
 				484BFF4C255B7B53003E92B9 /* main.m */,
 			);
 			path = MQSRPDemo;
+			sourceTree = "<group>";
+		};
+		484BFF5A255B8C08003E92B9 /* SRP */ = {
+			isa = PBXGroup;
+			children = (
+				484BFF5B255B8C1A003E92B9 /* SRPWageManager.h */,
+				484BFF5C255B8C1A003E92B9 /* SRPWageManager.m */,
+				484BFF5F255B8C30003E92B9 /* SRPWageLevelManager.h */,
+				484BFF60255B8C30003E92B9 /* SRPWageLevelManager.m */,
+				484BFF63255B8C71003E92B9 /* SRPWageFormulaManager.h */,
+				484BFF64255B8C71003E92B9 /* SRPWageFormulaManager.m */,
+			);
+			path = SRP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				484BFF58255B8773003E92B9 /* WageManager.m in Sources */,
+				484BFF5D255B8C1A003E92B9 /* SRPWageManager.m in Sources */,
 				484BFF42255B7B52003E92B9 /* ViewController.m in Sources */,
 				484BFF3C255B7B52003E92B9 /* AppDelegate.m in Sources */,
+				484BFF65255B8C71003E92B9 /* SRPWageFormulaManager.m in Sources */,
+				484BFF61255B8C30003E92B9 /* SRPWageLevelManager.m in Sources */,
 				484BFF4D255B7B53003E92B9 /* main.m in Sources */,
 				484BFF3F255B7B52003E92B9 /* SceneDelegate.m in Sources */,
 			);
@@ -293,6 +325,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MQSRPDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MQSRPDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
